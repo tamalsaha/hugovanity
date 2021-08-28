@@ -1,0 +1,140 @@
+host: gomodules.xyz
+
+paths:
+  /atomic-writer:
+    repo: https://github.com/gomodules/atomic-writer
+
+  /blobfs:
+    repo: https://github.com/gomodules/blobfs
+
+  /cert:
+    repo: https://github.com/gomodules/cert
+
+  /clock:
+    repo: https://github.com/gomodules/clock
+
+  /dns:
+    repo: https://github.com/gomodules/dns
+
+  /email-providers:
+    repo: https://github.com/gomodules/email-providers
+
+  /encoding:
+    repo: https://github.com/gomodules/encoding
+
+  /envconfig:
+    repo: https://github.com/gomodules/envconfig
+
+  /envsubst:
+    repo: https://github.com/gomodules/envsubst
+
+  /errors:
+    repo: https://github.com/gomodules/errors
+
+  /eval:
+    repo: https://github.com/gomodules/eval
+
+  /flags:
+    repo: https://github.com/gomodules/flags
+
+  /freshsales-client-go:
+    repo: https://github.com/gomodules/freshsales-client-go
+
+  /goautoneg:
+    repo: https://github.com/gomodules/goautoneg
+
+  /go-sh:
+    repo: https://github.com/gomodules/go-sh
+
+  /gdrive-utils:
+    repo: https://github.com/gomodules/gdrive-utils
+
+  /grpc-go-addons:
+    repo: https://github.com/gomodules/grpc-go-addons
+
+  /homedir:
+    repo: https://github.com/gomodules/homedir
+
+  /jsonpatch:
+    repo: https://github.com/gomodules/jsonpatch
+
+  /jsonpath:
+    repo: https://github.com/gomodules/jsonpath
+
+  /kglog:
+    repo: https://github.com/gomodules/kglog
+
+  /listmonk-client-go:
+    repo: https://github.com/gomodules/listmonk-client-go
+
+  /logs:
+    repo: https://github.com/gomodules/logs
+
+  /mergo:
+    repo: https://github.com/gomodules/mergo
+
+  /mod:
+    repo: https://github.com/gomodules/mod
+
+  /nats-logr:
+    repo: https://github.com/gomodules/nats-logr
+
+  /notify:
+    repo: https://github.com/gomodules/notify
+
+  /oneliners:
+    repo: https://github.com/gomodules/go-oneliners
+
+  /orderedmap:
+    repo: https://github.com/gomodules/orderedmap
+
+  /password-generator:
+    repo: https://github.com/gomodules/password-generator
+
+  /pointer:
+    repo: https://github.com/gomodules/pointer
+
+  /refutil:
+    repo: https://github.com/gomodules/refutil
+
+  /reaper:
+    repo: https://github.com/gomodules/reaper
+
+  /runtime:
+    repo: https://github.com/gomodules/runtime
+
+  /secrets:
+    repo: https://github.com/gomodules/secrets
+
+  /semvers:
+    repo: https://github.com/gomodules/semvers
+
+  /sets:
+    repo: https://github.com/gomodules/sets
+
+  /signals:
+    repo: https://github.com/gomodules/signals
+
+  /ssh:
+    repo: https://github.com/gomodules/ssh
+
+  /stow:
+    repo: https://github.com/gomodules/stow
+
+  /sync:
+    repo: https://github.com/gomodules/sync
+
+  /union-logr:
+    repo: https://github.com/gomodules/union-logr
+
+  /version:
+    repo: https://github.com/gomodules/version
+
+  /wait:
+    repo: https://github.com/gomodules/wait
+
+  /x:
+    repo: https://github.com/gomodules/x
+
+  /ulids:
+    repo: https://github.com/gomodules/ulids

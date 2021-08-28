@@ -1,5 +1,12 @@
 {{define "main" }}
 
-hey hey
+{{ $baseURL := urls.Parse $.Site.BaseURL }}
+
+<h1>{{$baseURL.Host}}</h1>
+<ul>
+{{ range $path, $prefix := $.Site.Data.vanity.paths }}
+<li><a href="https://pkg.go.dev/{{$baseURL.Host}}{{$path}}">{{$baseURL.Host}}{{$path}}</a></li>
+{{ end }}
+</ul>
 
 {{ end }}
