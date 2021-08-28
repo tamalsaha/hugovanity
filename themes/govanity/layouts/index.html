@@ -7,7 +7,7 @@
 {{- range $path, $git := $.Site.Data.vanity.paths -}}
     {{- $tpl := resources.Get "template.html" -}}
     {{- $ctx := (dict "host" $host "path" $path "repo" $git.repo) -}}
-    {{- $target := (printf "%s.html" $path) -}}
+    {{- $target := (printf "%s/index.html" $path) -}}
     {{- $page := resources.ExecuteAsTemplate $target $ctx $tpl -}}
     <!-- {{ $page.Permalink }} -->
     <li><a href="https://pkg.go.dev/{{$host}}{{$path}}">{{$host}}{{$path}}</a></li>
