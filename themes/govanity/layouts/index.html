@@ -2,10 +2,10 @@
 
 {{ $baseURL := urls.Parse $.Site.BaseURL }}
 
-<h1>{{$baseURL.Host}}</h1>
+<h1>{{$.Site.Data.vanity.host}}</h1>
 <ul>
 {{ range $path, $prefix := $.Site.Data.vanity.paths }}
-<li><a href="https://pkg.go.dev/{{$baseURL.Host}}{{$path}}">{{$baseURL.Host}}{{$path}}</a></li>
+<li><a href="https://pkg.go.dev/{{$.Site.Data.vanity.host}}{{$path}}">{{$.Site.Data.vanity.host}}{{$path}}</a></li>
 {{ end }}
 </ul>
 
