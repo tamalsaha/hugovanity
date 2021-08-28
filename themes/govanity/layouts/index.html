@@ -1,12 +1,17 @@
 {{define "main" }}
 
-{{ $baseURL := urls.Parse $.Site.BaseURL }}
+{{ $host := $.Site.Data.vanity.host }}
 
-<h1>{{$.Site.Data.vanity.host}}</h1>
+<h1>{{$host}}</h1>
 <ul>
-{{ range $path, $prefix := $.Site.Data.vanity.paths }}
-<li><a href="https://pkg.go.dev/{{$.Site.Data.vanity.host}}{{$path}}">{{$.Site.Data.vanity.host}}{{$path}}</a></li>
-{{ end }}
+{{- range $path, $git := $.Site.Data.vanity.paths -}}
+    {{- $tpl := resources.Get "template.html" -}}
+    {{- $ctx := (dict "host" $host "path" $path "repo" $git.repo) -}}
+    {{- $target := (printf "%s.html" $path) -}}
+    {{- $page := resources.ExecuteAsTemplate $target $ctx $tpl -}}
+    <!-- {{ $page.Permalink }} -->
+    <li><a href="https://pkg.go.dev/{{$host}}{{$path}}">{{$host}}{{$path}}</a></li>
+{{- end }}
 </ul>
 
 {{ end }}
