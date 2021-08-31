@@ -57,6 +57,9 @@ paths:
 
   /jsonpatch:
     repo: https://github.com/gomodules/jsonpatch
+    versions:
+      - v2
+      - v3
 
   /jsonpath:
     repo: https://github.com/gomodules/jsonpath
